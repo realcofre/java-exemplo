@@ -44,18 +44,25 @@ public class Main {
 
 
         //Triangulo trianguloY = new Triangulo(7.8, 5.6, 9.2);
-        Triangulo trianguloY = new Triangulo();
-        System.out.println("Digite as medidas do triangulo Y: ");
-        trianguloY.setA(entrada.nextDouble());
-        trianguloY.setB(entrada.nextDouble());
-        trianguloY.setC(entrada.nextDouble());
-        System.out.printf("Triangulo Y área: %.4f%n", trianguloY.calcularArea());
+//        Triangulo trianguloY = new Triangulo();
+//        System.out.println("Digite as medidas do triangulo Y: ");
+//        trianguloY.setA(entrada.nextDouble());
+//        trianguloY.setB(entrada.nextDouble());
+//        trianguloY.setC(entrada.nextDouble());
+//        System.out.printf("Triangulo Y área: %.4f%n", trianguloY.calcularArea());
+//
+//        if (trianguloX.getArea() > trianguloY.getArea()) {
+//            System.out.println("Maior área: X");
+//        } else {
+//            System.out.println("Maior área: Y");
+//        }
 
-        if (trianguloX.getArea() > trianguloY.getArea()) {
-            System.out.println("Maior área: X");
-        } else {
-            System.out.println("Maior área: Y");
-        }
+        Retangulo retA = new Retangulo();
+        System.out.println("Digite a base do retângulo: ");
+        retA.setBase(entrada.nextDouble());
+        System.out.println("Digite a altura do retângulo: ");
+        retA.setAltura(entrada.nextDouble());
+        System.out.printf("A área do retângulo A: %.4f%n", retA.calcularArea());
 
     }
 }
